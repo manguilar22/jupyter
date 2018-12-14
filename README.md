@@ -1,5 +1,11 @@
 # Jupyter 
 
+### Generate Password for Jupyter Notebook
+
+**-$** jupyter notebook password 
+
+*Copy and Paste your sha:<_id>* within *~/.jupyter/jupyter_notebook_config.py*
+
 ### Start Server (*HTTP*)
 
 **-$** jupyter notebook 
