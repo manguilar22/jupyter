@@ -1,2 +1,1 @@
-# jupyter
-Configurations and Services
+# Jupyter 
