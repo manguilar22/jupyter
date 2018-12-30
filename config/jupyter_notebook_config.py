@@ -16,7 +16,7 @@ c.NotebookApp.password_required = True
 
 c.NotebookApp.open_browser = False
 
-c.NotebookApp.base_url = '/epcc/'
+c.NotebookApp.base_url = '/test/'
 
 # THIS IS THE LINE TO TEST , scalability 
 c.NotebookApp.iopub_data_rate_limit = 10e6
