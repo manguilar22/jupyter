@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+# Documentation -> https://github.com/SpencerPark/IJava
+
 # Java Kernel for Jupyter (Version) 
 kernel="ijava-1.3.0.zip"
 
