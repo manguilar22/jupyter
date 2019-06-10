@@ -1,5 +1,13 @@
 # Jupyter 
 
+
+### Configuration 
+
+**# jupyter notebook --generate-config**
+
+*Writing default config to: $HOME/.jupyter/jupyter_notebook_config.py*
+
+
 ### Generate Password for Jupyter Notebook
 
 **-$** jupyter notebook password 
