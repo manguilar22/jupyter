@@ -1,3 +1,6 @@
+# Options
+# https://jupyter-notebook.readthedocs.io/en/stable/config.html
+
 # Set options for certfile, ip, password, and toggle off
 # browser auto-opening
 #c.NotebookApp.certfile = u'/absolute/path/to/your/certificate/mycert.pem'
@@ -7,6 +10,9 @@
 c.NotebookApp.allow_root = False 
 
 c.NotebookApp.ip = '0.0.0.0'
+c.NotebookApp.port = 8000
+c.NotebookApp.allow_remote_access = True
+c.NotebookApp.allow_origin = '*' #allow all origins
 
 ## Hashed password to use for web authentication.
 #  
@@ -25,8 +31,13 @@ c.NotebookApp.open_browser = False
 
 c.NotebookApp.base_url = '/test/'
 
-# THIS IS THE LINE TO TEST , scalability 
+# Scalability 
+
+# Maximum rate at which stream output can be sent on iopub before they are limited.
 c.NotebookApp.iopub_data_rate_limit = 10e6
 
-# It is a good idea to set a known, fixed port for server access
-c.NotebookApp.port = 4000
+# Maximum rate at which messages can be sent on iopub before they are limited.
+c.NotebookApp.iopub_msg_rate_limit = 10e6 
+
+# Gets or sets the maximum amount of memory, in bytes, that is allocated for use by the buffer manager. (Default: 536870912)
+c.NotebookApp.max_buffer_size=536e6
