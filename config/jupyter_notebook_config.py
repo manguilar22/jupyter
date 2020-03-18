@@ -21,17 +21,19 @@ c.NotebookApp.allow_origin = '*' #allow all origins
 #    from notebook.auth import passwd; passwd()
 #  
 #  The string should be of the form type:salt:hashed-password.
-c.NotebookApp.password = u'sha1:f71d43ef14ea:35d9e0dce987ac937a85f9111bdbf0933ab24d72'
+c.NotebookApp.password = u''
 
 c.NotebookApp.allow_password_change = False
 
-c.NotebookApp.password_required = True
+c.NotebookApp.password_required = True 
 
 c.NotebookApp.open_browser = False
 
-c.NotebookApp.base_url = '/test/'
+c.NotebookApp.base_url = '/'
 
+################
 # Scalability 
+###############
 
 # Maximum rate at which stream output can be sent on iopub before they are limited.
 c.NotebookApp.iopub_data_rate_limit = 10e6
@@ -40,4 +42,4 @@ c.NotebookApp.iopub_data_rate_limit = 10e6
 c.NotebookApp.iopub_msg_rate_limit = 10e6 
 
 # Gets or sets the maximum amount of memory, in bytes, that is allocated for use by the buffer manager. (Default: 536870912)
-c.NotebookApp.max_buffer_size=536e6
+c.NotebookApp.max_buffer_size=536000000 #536e6
